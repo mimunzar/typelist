@@ -1,8 +1,8 @@
 #pragma once
 
-#include "TypelistModern.hpp"
+#include "Typelist.hpp"
 
-namespace tl_modern {
+namespace Cpp11 { 
 
 /** Returns index of the first occurence */
 template<typename T, typename S>

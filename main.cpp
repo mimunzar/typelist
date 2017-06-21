@@ -2,12 +2,12 @@
 
 #include "Typelist.hpp"
 #include "TypelistAlgs.hpp"
-#include "TypelistModern.hpp"
-#include "TypelistAlgsModern.hpp"
+#include "Cpp11/Typelist.hpp"
+#include "Cpp11/TypelistAlgs.hpp"
 
-using namespace tl_modern;
+using namespace Cpp11;
 
-/** Type displayer for the algorithm validation */
+/** Type displayer for algorithms validation */
 template<typename T>
 struct TD;
 

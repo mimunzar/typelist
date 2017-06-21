@@ -1,6 +1,6 @@
 #pragma once
 
-namespace tl_modern {
+namespace Cpp11 {
 
 /** Typelist */
 template<typename... Args>
