@@ -41,5 +41,5 @@ struct TypeAt<Typelist<T, U>, 0> {
     typedef T type;
 };
 
-} // namespace tl
+}
 

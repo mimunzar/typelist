@@ -1,6 +1,7 @@
+#include "Typelist.hpp"
+
 #include <iostream>
 
-#include "Typelist.hpp"
 #include "TypelistAlgs.hpp"
 #include "Cpp11/Typelist.hpp"
 #include "Cpp11/TypelistAlgs.hpp"

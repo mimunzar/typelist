@@ -32,5 +32,5 @@ struct TypeAt<Typelist<T, Args...>, index> {
     using result = typename TypeAt<Typelist<Args...>, index - 1>::result;
 };
 
-} // namespace tl_modern
+}
 

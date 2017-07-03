@@ -122,5 +122,5 @@ struct Replace<Typelist<T, U>, A,  B> {
     typedef Typelist<T, typename Replace<U, A, B>::type> type;
 };
 
-} // namespace tl
+}
 
