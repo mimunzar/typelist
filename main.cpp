@@ -1,8 +1,3 @@
-#include "Typelist.hpp"
-
-#include <iostream>
-
-#include "TypelistAlgs.hpp"
 #include "Cpp11/Typelist.hpp"
 #include "Cpp11/TypelistAlgs.hpp"
 

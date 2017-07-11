@@ -1,5 +1,7 @@
 #pragma once
 
+#include <cstddef>
+
 #define TYPELIST_1(T1) Typelist<T1, NullType>
 #define TYPELIST_2(T1, T2) Typelist<T1, TYPELIST_1(T2)>
 #define TYPELIST_3(T1, T2, T3) Typelist<T1, TYPELIST_2(T2, T3)>
@@ -30,9 +32,9 @@ struct Length<NullType> {
 };
 
 /** Random access */
-template<typename T, size_t i>
+template<typename T, std::size_t i>
 struct TypeAt;
-template<typename T, typename U, size_t i>
+template<typename T, typename U, std::size_t i>
 struct TypeAt<Typelist<T, U>, i> {
     typedef typename TypeAt<U, i - 1>::type type;
 };
