@@ -2,8 +2,6 @@
 
 #include "Typelist.hpp"
 
-namespace tl {
-
 /** Returns index of the first occurence */
 template<typename T, typename S>
 struct IndexOf;
@@ -121,6 +119,4 @@ template<typename T, typename U, typename A, typename B>
 struct Replace<Typelist<T, U>, A,  B> {
     typedef Typelist<T, typename Replace<U, A, B>::type> type;
 };
-
-}
 

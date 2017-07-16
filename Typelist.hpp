@@ -7,8 +7,6 @@
 #define TYPELIST_3(T1, T2, T3) Typelist<T1, TYPELIST_2(T2, T3)>
 #define TYPELIST_4(T1, T2, T3, T4) Typelist<T1, TYPELIST_3(T2, T3, T4)>
 
-namespace tl {
-
 /** Typelist */
 template<typename T, typename U>
 struct Typelist {
@@ -42,6 +40,4 @@ template<typename T, typename U>
 struct TypeAt<Typelist<T, U>, 0> {
     typedef T type;
 };
-
-}
 
